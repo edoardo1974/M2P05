@@ -1,8 +1,25 @@
 body/*Características Principais do Corpo*/
 {
+    background-color: azure;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.grid-container/*Classe contentora onde a estrutura Grid é declarada*/
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;/*Definir a estrutura da página com linhas e colunas*/
+    grid-template-rows: 80px 100px 80px 200px 200px 150px 70px 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.element /*Características do Título*/
+{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 
 div h1 img/*Características da Imagem do Título*/
@@ -11,20 +28,91 @@ div h1 img/*Características da Imagem do Título*/
     height: 300px;
 }
 
-.calibri-font {
-    font-family: Calibri, sans-serif;
+table/*Características da Tabela*/
+{
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    padding: 10%;
 }
 
-table {
+
+table,
+td,
+th
+{
+	border:1px solid green;
+	border-collapse:collapse;
+    
+    
+}
+
+td,
+th
+{
+	padding:3px 5px
+
+}
+
+td
+{
+	text-align: right
+}
+th
+{
+	text-align: left;
+    background-color: white; 
+    font-size: normal;
+}
+
+table caption
+{
+    background-color: #333FFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border:1px solid green;
+    border-collapse:collapse;
+    
+}
+
+#first-content
+{
+    
+    padding:0px auto;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+     
+    
+
+}
+
+#first-content li
+{
+    
+    
+    justify-content: left; 
+    align-items: center;
+    list-style: none;
+    
+}
+
+
+/*table {
     width: 100%;
     border: 5px solid green;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
+    *\
 
 
 
-/*Altere o valor para alterar o tamanho do texto das células */
+/*Altere o valor para alterar o tamanho do texto das células 
 th, td {
     height: 10px;
     padding: 30px;
@@ -32,4 +120,6 @@ th, td {
     font-size: 30px;
     text-align: center;
 }
-/*Altere o valor para alterar o tamanho do texto dos títulos -->*/
+
+*/
+
