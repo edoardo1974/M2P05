@@ -10,7 +10,7 @@ body/*Características Principais do Corpo*/
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;/*Definir a estrutura da página com linhas e colunas*/
-    grid-template-rows: 80px 100px 80px 200px 200px 150px 70px 150px;
+    grid-template-rows: 80px 350px 200px 200px 200px 150px 70px 150px;
     margin: 0px;
     padding: 0px;
 }
@@ -96,9 +96,53 @@ table caption
     
     
     justify-content: left; 
-    align-items: center;
+    align-items: right;
     list-style: none;
     
+}
+
+.element ul li
+{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display:inline;
+    list-style: none;
+}
+
+.element:first-child/*Características do Primeiro Elemento*/
+{
+
+    grid-column: 1 / 4;
+    grid-row: 1 ;
+    
+}
+
+.element:nth-child(2)/*Características do Segundo Elemento*/
+{
+    grid-column: 1 ;
+    grid-row: 2;
+}
+
+.element:nth-child(3)/*Características do Terceiro Elemento*/
+{
+    grid-column: 2 ;
+    grid-row: 2 ;
+}
+
+.element:nth-child(4)/*Características do Quarto Elemento*/
+{
+    grid-column: 3;
+    grid-row: 2 ;
+}
+
+.element:nth-child(5)/*Características do Quinto Elemento*/
+{
+    grid-column: 2 ;
+    grid-row: 3;
+   
 }
 
 
