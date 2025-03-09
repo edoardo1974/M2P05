@@ -10,7 +10,7 @@ body/*Características Principais do Corpo*/
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;/*Definir a estrutura da página com linhas e colunas*/
-    grid-template-rows: 80px 350px 200px 200px 200px 150px 70px 150px;
+    grid-template-rows: 80px 350px 200px 100px;
     margin: 0px;
     padding: 0px;
 }
@@ -165,24 +165,66 @@ div footer form /*Características do Rodapé*/
 }
 
 
-/*table {
-    width: 100%;
-    border: 5px solid green;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-}
-    *\
-
-
-
-/*Altere o valor para alterar o tamanho do texto das células 
-th, td {
-    height: 10px;
-    padding: 30px;
-    border: 5px solid green;
-    font-size: 30px;
-    text-align: center;
+@media screen and (max-width: 490px){ /*Características do Rodapé*/
+    
+.grid-container/*Classe contentora onde a estrutura Grid é declarada*/
+{
+display: grid;
+grid-template-columns: 490px ;/*Definir a estrutura da página com linhas e colunas*/
+grid-template-rows: 50px 350px 200px 50px ;
+margin: 0px;
+padding: 0px;
 }
 
-*/
+.element:nth-child(1)/*Filha classe número 6*/
+{
+    
+    grid-column: 1; 
+    grid-row: 1; 
+    display: flex;
+}
+   
+
+.element:nth-child(2)/*Filha classe número 6*/
+{
+    
+    
+    display: none;
+}
+
+.element:nth-child(3)/*Filha classe número 6*/
+{
+    grid-column: 1; 
+    grid-row: 2; 
+     
+    
+    align-items: center;
+}
+
+.element:nth-child(4)/*Filha classe número 6*/
+{
+    
+     
+    display: none;
+}
+
+.element:nth-child(5)/*Filha classe número 6*/
+{
+    
+    grid-column: 1; 
+    grid-row: 3; 
+    align-items: center;
+}
+
+.element:nth-child(6)/*Características do Quarto Elemento*/
+{
+    grid-column: 1;
+    grid-row: 4 ;
+    align-items: center;
+}
+
+
+
+    
+}
 
