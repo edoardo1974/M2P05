@@ -19,7 +19,6 @@ h2/*Características do Subtítulo*/
     color: #B8B9C4;
     text-align: center;
     font-size: 15px;
-    
 }
 
 .grid-container/*Classe contentora onde a estrutura Grid é declarada*/
@@ -31,7 +30,7 @@ h2/*Características do Subtítulo*/
     padding: 0px;
 }
 
-.element /*Características do Título*/
+.element /*Classe dos Elementos*/
 {
     padding: 0px;
     margin: 0px;
@@ -54,16 +53,12 @@ table/*Características da Tabela*/
     padding: 10%;
 }
 
-
-table,
+table,/*Características da Tabela*/
 td,
 th
 {
-    
 	border:1px solid green;
 	border-collapse:collapse;
-    
-    
 }
 
 td,
@@ -71,13 +66,13 @@ th
 {
     margin: 10px;
     padding: 10px;
-	
 }
 
 td
 {
 	text-align: center;
 }
+
 th
 {
 	text-align: left;
@@ -85,7 +80,7 @@ th
     font-size: normal;
 }
 
-table caption
+table caption/*Características da Legenda da Tabela*/
 {
     background-color: #333FFF;
     color: white;
@@ -93,31 +88,30 @@ table caption
     font-weight: bold;
     border:1px solid green;
     border-collapse:collapse;
-    
 }
 
-#first-content
+#first-content/*Carateristica do Primero Elemento*/
 {
-    
     padding:0px auto;
     margin: 0px auto;
     text-align: center;
     width: 100%;
     height: 80%;
-     
-    
-
 }
 
+/*
+ * Description: Styles for the first content list items.
+ */
 #first-content li
 {
-    
-    
     justify-content: left; 
     align-items: right;
     list-style: none;
-    
 }
+
+/*
+ * Description: Styles for the element list items.
+ */
 
 .element ul li
 {
@@ -132,10 +126,8 @@ table caption
 
 .element:first-child/*Características do Primeiro Elemento*/
 {
-
     grid-column: 1 / 4;
     grid-row: 1 ;
-    
 }
 
 .element:nth-child(2)/*Características do Segundo Elemento*/
@@ -162,10 +154,9 @@ table caption
     grid-row: 3;
     width: 100%;
     height: 100%;
-   
 }
 
-.element:nth-child(6)/*Características do Quarto Elemento*/
+.element:nth-child(6)/*Características do sesto Elemento*/
 {
     grid-column: 2;
     grid-row: 4 ;
@@ -173,15 +164,13 @@ table caption
 
 div footer form /*Características do Rodapé*/
 {
-    
     text-align: center;
     padding: 10px;
     margin: 0px;
-    
 }
 
 
-@media screen and (max-width: 490px){ /*Características do Rodapé*/
+@media screen and (max-width: 490px){ /*Características da Página para Dispositivos Móveis*/
     
 .grid-container/*Classe contentora onde a estrutura Grid é declarada*/
 {
@@ -192,68 +181,53 @@ margin: 0px;
 padding: 0px;
 }
 
-.element:nth-child(1)/*Filha classe número 6*/
-{
-    
+.element:nth-child(1)/*Filha classe número 1*/
+{ 
     grid-column: 1; 
     grid-row: 1; 
-    padding: 0px 35px 0px 0px;
-    
-    
+    padding: 0px 35px 0px 0px; 
 }
    
 
-.element:nth-child(2)/*Filha classe número 6*/
+.element:nth-child(2)/*Filha classe número 2*/
 {
-    
-    
     display: none;
 }
 
-.element:nth-child(3)/*Filha classe número 6*/
+.element:nth-child(3)/*Filha classe número 3*/
 {
     grid-column: 1; 
-    grid-row: 2; 
-     
-    
+    grid-row: 2;
     align-items: center;
 }
 
-.element:nth-child(4)/*Filha classe número 6*/
+.element:nth-child(4)/*Filha classe número 4*/
 {
-    
-     
     display: none;
 }
 
-.element:nth-child(5)/*Filha classe número 6*/
+.element:nth-child(5)/*Filha classe número 5*/
 {
-    
     grid-column: 1; 
     grid-row: 3; 
     padding: 0px 20px 0px 60px; 
-    margin: 10px;
-    
+    margin: 10px;   
 }
 
-.element:nth-child(6)/*Características do Quarto Elemento*/
+.element:nth-child(6)/*Filha classe número 6*/
 {
     grid-column: 1;
     grid-row: 4 ;
     align-items: center;
 }
 
-table,
+table,/*Características da Tabela*/
 td,
 th
 {
-    
 	border:1px solid green;
 	border-collapse:collapse;
-    
-    align-content: center;
-    
-    
+    align-content: center;  
 }
 
 td,
@@ -262,7 +236,6 @@ th
     margin: 10px;
     padding: 10px;
     font-size: 10px;
-	
 }
 
 td
@@ -284,17 +257,14 @@ table caption
     font-weight: bold;
     border:1px solid green;
     border-collapse:collapse;
-    
 }
 
 div footer form /*Características do Rodapé*/
 {
-    
     text-align: center;
     padding: 10px;
     margin: 0px;
     font-size: 10px;
-    
 }
 
     
