@@ -6,6 +6,22 @@ body/*Características Principais do Corpo*/
     padding: 0;
 }
 
+h1/*Características do Título*/
+{
+    color: #333FFF;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+h2/*Características do Subtítulo*/
+{
+    color: #B8B9C4;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
 .grid-container/*Classe contentora onde a estrutura Grid é declarada*/
 {
     display: grid;
@@ -171,7 +187,7 @@ div footer form /*Características do Rodapé*/
 {
 display: grid;
 grid-template-columns: 490px ;/*Definir a estrutura da página com linhas e colunas*/
-grid-template-rows: 50px 350px 200px 50px ;
+grid-template-rows: 50px 350px 150px 50px ;
 margin: 0px;
 padding: 0px;
 }
@@ -181,7 +197,9 @@ padding: 0px;
     
     grid-column: 1; 
     grid-row: 1; 
-    display: flex;
+    padding: 0px 35px 0px 0px;
+    
+    
 }
    
 
@@ -213,7 +231,9 @@ padding: 0px;
     
     grid-column: 1; 
     grid-row: 3; 
-    align-items: center;
+    padding: 0px 20px 0px 60px; 
+    margin: 10px;
+    
 }
 
 .element:nth-child(6)/*Características do Quarto Elemento*/
@@ -223,7 +243,59 @@ padding: 0px;
     align-items: center;
 }
 
+table,
+td,
+th
+{
+    
+	border:1px solid green;
+	border-collapse:collapse;
+    
+    align-content: center;
+    
+    
+}
 
+td,
+th
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+	
+}
+
+td
+{
+	text-align: center;
+}
+th
+{
+	text-align: left;
+    background-color: white; 
+    font-size: normal;
+}
+
+table caption
+{
+    background-color: #333FFF;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border:1px solid green;
+    border-collapse:collapse;
+    
+}
+
+div footer form /*Características do Rodapé*/
+{
+    
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    font-size: 10px;
+    
+}
 
     
 }
